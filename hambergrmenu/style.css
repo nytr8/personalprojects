@@ -1,6 +1,7 @@
 body {
     margin: 0px;
     padding: 0px;
+    height: 200vh;
     box-sizing: border-box;
 }
 
@@ -10,7 +11,16 @@ body {
     box-sizing: inherit;
 }
 
-/* #nav {} */
+#nav.stickey {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: 0.5s;
+    color: white;
+    background-color: black;
+}
 
 .container {
     max-width: 1080px;
@@ -102,4 +112,10 @@ body {
         background-color: white;
     }
 
+
+
+}
+
+.stickeyNot {
+    position: static;
 }
