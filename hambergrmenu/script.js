@@ -15,6 +15,7 @@ window.addEventListener("scroll", () => {
     }
     else {
         navStickey.classList.add("stickeyNot")
+        navStickey.classList.remove("stickey")
     }
 })
 
