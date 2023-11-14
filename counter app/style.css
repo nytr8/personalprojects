@@ -1,0 +1,31 @@
+body {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+}
+
+.wrapper {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    border: none;
+    background-color: rgb(133, 133, 255);
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1.5rem;
+    margin-inline: 10px;
+}
+.text-div{
+    text-align: center;
+    font-size: 4rem;
+    margin: 20px;
+}
+
+.btn:hover {
+    background-color: rgb(99, 99, 187);
+}
