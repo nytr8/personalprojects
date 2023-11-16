@@ -42,7 +42,7 @@
 
 }
 
-.faq-ansdiv.active {
+.active .faq-ansdiv {
     display: block;
     transition: all 2s ease-in-out;
 }
