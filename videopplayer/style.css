@@ -1,0 +1,64 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*:after,
+*:before {
+    box-sizing: inherit;
+}
+
+
+video {
+
+    width: 400px;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.main {
+    height: 100vh;
+    width: 50%;
+    margin-inline: auto;
+    margin-block: 100px;
+    
+}
+
+video {
+    object-fit: cover;
+}
+
+.wrapper {
+
+    margin-inline: auto;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 400px;
+    height: 600px;
+}
+.btn{
+    text-align: center;
+    width: 15%;
+    margin: auto;
+    margin-top: 20px;
+    background-color: gray;
+    padding: 20px;
+    border-radius: 50px;
+    position: relative;
+}
+span{
+    background-color: green;
+    border-radius: 50px;
+    padding: 20px;
+    position: relative;
+    left: -36%;
+    color: white;
+}
+span.play{
+    left: 30%;
+}
