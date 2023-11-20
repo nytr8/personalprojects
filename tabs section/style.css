@@ -1,0 +1,80 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*:after,
+*:before {
+    box-sizing: inherit;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.main-section {
+    width: 30%;
+    height: 400px;
+    background-color: antiquewhite;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.tabs-section {
+    display: flex;
+}
+
+.tabs {
+    text-align: center;
+    flex-basis: 100%;
+    padding: 10px;
+    font-size: 1.2rem;
+    background-color: rgba(255, 255, 255, 0.378);
+}
+
+.history {
+    border-right: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.goals {
+    border-left: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+
+.history:hover {
+    background-color: rgb(255, 255, 255);
+}
+
+.goals:hover {
+    background-color: rgb(255, 255, 255);
+}
+
+.visions:hover {
+    background-color: rgb(255, 255, 255);
+}
+
+.test-div {
+    margin-inline: auto;
+    margin-block: 30px;
+    width: 90%;
+    display: none;
+}
+
+
+
+
+.active {
+    display: block;
+}
+
+
+.test-div p {
+    font-size: 1.1rem;
+    padding: 20px;
+    text-align: justify;
+}
