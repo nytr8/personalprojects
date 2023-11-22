@@ -1,30 +1,37 @@
-// let historyTab = document.querySelector(".history");
-// let visionTab = document.querySelector(".visions");
-// let goalsTab = document.querySelector(".goals");
-let tabs = document.querySelectorAll(".tabs");
 
-let historyDiv = document.querySelector("#historydiv");
-let visionsDiv = document.querySelector("#visionsdiv");
-let goalsDiv = document.querySelector("#goalsdiv");
-
-// console.log(historyTab)
+let btns = document.querySelectorAll(".tabs");
+let textDiv = document.querySelectorAll(".text-div");
+let tabsDiv = document.querySelector(".tabs-section");
 
 
-tabs.forEach((tab) => {
-    tab.addEventListener("click", (e) => {
-        console.log(e.target.innerText)
-        if (e.target.innerText === "history") {
-            historyDiv.classList.toggle("active")
-        }
-        else if (e.target.innerText === "visions") {
-            visionsDiv.classList.toggle("active")
-        }
-        else if (e.target.innerText === "goals") {
-            goalsDiv.classList.toggle("active")
-        }
-        else {
-            // goalsDiv.classList.remove("active")
-        }
+
+
+// historyDiv.classList.add("active")
+
+
+
+btns.forEach((btn) => {
+
+    btn.addEventListener("click", (btnElement) => {
+        // console.log(btn)
+
+
+        textDiv.forEach((textElement) => {
+            // console.log(textElement.id)
+            if (btnElement.currentTarget.innerText == textElement.id) {
+                // console.log("true")
+                btn.classList.add("tabs-active")
+                textElement.classList.add("active")
+
+            }
+            else {
+                textElement.classList.remove("active")
+
+            }
+            if (btnElement.currentTarget.innerText !== textElement.id) {
+                btn.classList.remove("tabs-active")
+            }
+        })
     })
 
 })
